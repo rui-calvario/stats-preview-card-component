@@ -2,7 +2,7 @@
 
 The Stats Preview Card Component is built with HTML &amp; CSS.
 
-Tools utilized
+Tech Stack
 
 - HTML
 - CSS
