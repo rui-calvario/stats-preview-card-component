@@ -1,0 +1,20 @@
+{
+  "name": "stats-preview-card-component",
+  "version": "1.0.0",
+  "description": "The Stats Preview Card Component is built with HTML &amp; CSS. Utilizing tools such as Flexbox and SASS.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o css scss/app.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rui-calvario/stats-preview-card-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rui-calvario/stats-preview-card-component/issues"
+  },
+  "homepage": "https://github.com/rui-calvario/stats-preview-card-component#readme"
+}
