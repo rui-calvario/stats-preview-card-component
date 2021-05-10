@@ -1,3 +1,111 @@
+//PARTIALS IMPORT
+@import 'reset';
+
+//FONT IMPORT
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+//VARIABLES
+//colours
+$very-dark-blue: hsl(233, 47%, 7%); // main background
+$dark-blue: hsl(244, 38%, 16%); // card background
+$soft-violet: hsl(277, 64%, 61%); // accents
+$white: hsl(0, 0%, 100%); // main heading & stats
+$slight-faded-white: hsla(0, 0%, 100%, 0.75); // main paragraph
+$faded-white: hsla(0, 0%, 100%, 0.6); // stats headings
+
+//fonts
+$inter: 'Inter', sans-serif;
+$lexend: 'Lexend Deca', sans-serif;
+
+//font Size
+$body-font-size: 15px; // body font size
+$heading-font-size: 36px; // heading font size
+$stats-font-size: 24px; // stats font size
+$stats-heading-font-size: 12px; // stats heading font size
+
+//STANDARD
 body {
-	background-color: blue;
+	background-color: $very-dark-blue;
+	font-family: 'Inter', sans-serif;
+	font-size: $body-font-size;
+	color: $slight-faded-white;
+}
+
+h1 {
+	font-family: $inter;
+	font-size: $heading-font-size;
+	line-height: 44px;
+	font-weight: 700;
+	color: $white;
+	margin-bottom: 25px;
+}
+
+h3 {
+	font-family: $inter;
+	font-size: $stats-font-size;
+	font-weight: 700;
+	color: $white;
+}
+
+p.description {
+	font-family: $inter;
+	font-size: $body-font-size;
+	font-weight: 400;
+	line-height: 25px;
+	color: $slight-faded-white;
+	padding-right: 80px;
+}
+
+p.stats-title {
+	font-family: $lexend;
+	font-size: $stats-heading-font-size;
+	line-height: 25px;
+	letter-spacing: 1px;
+	color: $faded-white;
+	text-transform: uppercase;
+}
+
+span.accents {
+	color: $soft-violet;
+}
+
+//CONTAINER
+.container {
+	margin: 0 auto;
+	padding: 0;
+	height: 100vh;
+	max-width: 1440px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//CARD
+.card {
+	margin: 0 auto;
+	padding: 0;
+	width: 80%;
+	height: 446px;
+	background-color: $dark-blue;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.2);
+}
+
+.content {
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.stats-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 80px;
+	width: 100%;
+	padding-right: 80px;
 }

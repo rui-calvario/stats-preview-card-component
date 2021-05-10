@@ -4,7 +4,7 @@
   "description": "The Stats Preview Card Component is built with HTML &amp; CSS. Utilizing tools such as Flexbox and SASS.",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass -o css scss/app.scss -w"
+    "watch": "node-sass -o css scss -w"
   },
   "repository": {
     "type": "git",

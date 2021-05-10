@@ -6,6 +6,5 @@ Tech Stack
 
 - HTML
 - CSS
-- SASS / SCSS
+- SASS
 - Flexbox
-- CSS Grid
