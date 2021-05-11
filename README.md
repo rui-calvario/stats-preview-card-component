@@ -9,6 +9,3 @@ The following Tech Stack was used:
 - CSS
 - SASS
 - Flexbox
-
-View the completed project at https://www.ruicalvario.com/<br>
-Rui Calvario's Portfolio: https://www.ruicalvario.com
