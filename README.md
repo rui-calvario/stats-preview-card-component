@@ -10,5 +10,5 @@ The following Tech Stack was used:
 - SASS
 - Flexbox
 
-View the completed project at https://www.ruicalvario.com/<br><br>
+View the completed project at https://www.ruicalvario.com/<br>
 Rui Calvario's Portfolio: https://www.ruicalvario.com
