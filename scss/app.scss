@@ -18,10 +18,10 @@ $inter: 'Inter', sans-serif;
 $lexend: 'Lexend Deca', sans-serif;
 
 //font Size
-$body-font-size: 15px; // body font size
-$heading-font-size: 36px; // heading font size
-$stats-font-size: 24px; // stats font size
-$stats-heading-font-size: 12px; // stats heading font size
+$body-font-size: 1rem; // body font size
+$heading-font-size: 2.4rem; // heading font size
+$stats-font-size: 1.6rem; // stats font size
+$stats-heading-font-size: 0.8rem; // stats heading font size
 
 //STANDARD
 body {
@@ -34,10 +34,16 @@ body {
 h1 {
 	font-family: $inter;
 	font-size: $heading-font-size;
-	line-height: 44px;
+	line-height: 2.933rem;
 	font-weight: 700;
 	color: $white;
-	margin-bottom: 25px;
+	margin-bottom: 1.666rem;
+
+	@media screen and (max-width: 720px) {
+		text-align: center;
+		font-size: 1.866rem;
+		line-height: 2.133rem;
+	}
 }
 
 h3 {
@@ -45,28 +51,50 @@ h3 {
 	font-size: $stats-font-size;
 	font-weight: 700;
 	color: $white;
+
+	@media screen and (max-width: 720px) {
+		text-align: center;
+	}
 }
 
 p.description {
 	font-family: $inter;
 	font-size: $body-font-size;
 	font-weight: 400;
-	line-height: 25px;
+	line-height: 1.666rem;
 	color: $slight-faded-white;
-	padding-right: 80px;
+	padding-right: 5.333rem;
+
+	@media screen and (max-width: 900px) {
+		padding: 0px 0.666rem 0px 0;
+	}
+
+	@media screen and (max-width: 720px) {
+		text-align: center;
+	}
 }
 
 p.stats-title {
 	font-family: $lexend;
 	font-size: $stats-heading-font-size;
-	line-height: 25px;
+	line-height: 1.666rem;
 	letter-spacing: 1px;
 	color: $faded-white;
 	text-transform: uppercase;
+
+	@media screen and (max-width: 720px) {
+		text-align: center;
+	}
 }
 
 span.accents {
 	color: $soft-violet;
+	font-size: $heading-font-size;
+
+	@media screen and (max-width: 720px) {
+		text-align: center;
+		font-size: 1.866rem;
+	}
 }
 
 //CONTAINER
@@ -78,6 +106,10 @@ span.accents {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	// @media screen and (max-width: 720px) {
+	// 	flex-direction: column-reverse;
+	// }
 }
 
 //CARD
@@ -93,19 +125,97 @@ span.accents {
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.2);
+
+	@media screen and (max-width: 1280px) {
+		width: 90%;
+	}
+
+	@media screen and (max-width: 720px) {
+		width: 80%;
+		height: 85%;
+		flex-direction: column-reverse;
+	}
 }
 
 .content {
-	padding: 0 80px;
+	padding: 0 4rem;
 	display: flex;
 	flex-direction: column;
+	width: 50%;
+
+	@media screen and (max-width: 1280px) {
+		padding: 0px 0.666rem 0px 2.666rem;
+	}
+
+	@media screen and (max-width: 1024px) {
+		padding: 0px 0.666rem 0px 2.666rem;
+	}
+
+	@media screen and (max-width: 900px) {
+		padding: 0px 0.666rem 0px 2.666rem;
+	}
+
+	@media screen and (max-width: 720px) {
+		width: 100%;
+		padding: 1.5rem 2rem;
+		height: 70%;
+	}
+
+	@media screen and (max-width: 375px) {
+		width: 100%;
+		padding: 1.5rem 1.1rem;
+		height: 70%;
+	}
 }
 
 .stats-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 80px;
+	margin-top: 5.333rem;
 	width: 100%;
-	padding-right: 80px;
+	padding-right: 5.333rem;
+
+	@media screen and (max-width: 900px) {
+		padding: 0px 1.5rem 0px 0px;
+	}
+
+	@media screen and (max-width: 720px) {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		margin-top: 1.8rem;
+	}
+
+	@media screen and (max-width: 375px) {
+		margin-top: 1.2rem;
+	}
+}
+
+.stats-item {
+	@media screen and (max-width: 720px) {
+		padding: 1rem 0;
+	}
+}
+
+.image {
+	height: 100%;
+	width: 50%;
+	background-image: url(../images/image-header-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #ab5cdb;
+	background-blend-mode: multiply;
+	border-radius: 0px 8px 8px 0px;
+
+	@media screen and (max-width: 1280px) {
+		background-size: cover;
+	}
+
+	@media screen and (max-width: 720px) {
+		width: 100%;
+		background-image: url(../images/image-header-mobile.jpg);
+		border-radius: 8px 8px 0px 0px;
+		height: 30%;
+	}
 }
