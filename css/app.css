@@ -113,12 +113,12 @@ span.accents {
   @media screen and (max-width: 720px) {
     .content {
       width: 100%;
-      padding: 1.5rem 2rem;
+      padding: 4rem 2rem 0;
       height: 70%; } }
   @media screen and (max-width: 375px) {
     .content {
       width: 100%;
-      padding: 1.5rem 1.1rem;
+      padding: 4rem 1.1rem;
       height: 70%; } }
 
 .stats-container {
